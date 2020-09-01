@@ -1,9 +1,11 @@
 header{
-    border-bottom: 1px solid black;
+    border-bottom: 0.5px solid #c5cad2;
+    background-color: #F4F4F4;
 }
-.hambergur{
+.my-btn{
     border: 0px;
     margin-left: 0px;
+    margin-right: 0px;
 }
 .menu{
     padding: 0px;
@@ -21,7 +23,7 @@ header{
     padding-right: 5%;
 }
 .item{
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .search{
     float: right;
@@ -37,5 +39,15 @@ header{
     border-radius: 0px;
 }
 .search-box:hover{
-    border-bottom: 1.3px solid black;
+    border-bottom: 1.3px solid #c5cad2;
+}
+.my-icon{
+    color: #4DE9E5;
+    font-size: 25px;
+}
+.menu-item:hover{
+    border-bottom: 1px solid #4DE9E5;
+}
+.menu-list{
+    text-align: center;
 }
