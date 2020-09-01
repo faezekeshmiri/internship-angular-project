@@ -1,5 +1,11 @@
+<section>
+  <h3 class="padding text-center title">:{{title}}</h3>
 <div class="d-flex flex-wrap justify-content-between padding">
-  <div *ngFor="let cat of categories" class="">
-    <h1>{{cat.name}}</h1>
+  <div *ngFor="let cat of categories" class="margin text-center category">
+    <a class="cat-link" href="#">
+    <img src={{cat.image}} class="rounded cat-img">
+    <h6 class="cat-title">{{cat.name}}</h6>
+    </a>
   </div>
 </div>
+</section>

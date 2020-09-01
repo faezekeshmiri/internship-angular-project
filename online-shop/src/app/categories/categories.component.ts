@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CategoriesComponent implements OnInit {
 
   categories: Category[];
+  title = "دسته بندی ها";
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {

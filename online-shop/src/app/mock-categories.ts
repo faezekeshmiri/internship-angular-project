@@ -1,10 +1,9 @@
 import { Category } from './category';
 
 export const CATEGORIES: Category[] = [
-  { id: 1, name: 'cat1', image: 'assets/img/cat.png'},
-  { id: 2, name: 'cat2', image: 'assets/img/cat.png'},
-  { id: 3, name: 'cat3', image: 'assets/img/cat.png' },
-  { id: 4, name: 'cat4', image: 'assets/img/cat.png' },
-  { id: 5, name: 'cat5', image: 'assets/img/cat.png' },
-  { id: 6, name: 'cat6', image: 'assets/img/cat.png' }
+  { id: 1, name: 'جوراب', image: 'assets/img/socks.png'},
+  { id: 2, name: 'کیف', image: 'assets/img/bag.png'},
+  { id: 4, name: 'کیف پول', image: 'assets/img/wallet.png' },
+  { id: 5, name: 'گوشواره', image: 'assets/img/earrings.png' },
+  { id: 6, name: 'دستبند', image: 'assets/img/bracelet.png' }
 ];
