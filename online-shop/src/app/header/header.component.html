@@ -1,0 +1,63 @@
+<header>
+  <div class="container-fluid head">
+    <div class="row justify-content-between no-gutters padding">
+      <div class="col-4 item">
+        <button>
+          <fa-icon [icon]="faShoppingCart" class="mx-auto my-icon"></fa-icon>
+        </button>
+      </div>
+      <div class="col-4 text-center">
+        <img src="assets/img/logo.png" class="mx-auto">
+      </div>
+      <div class="col-4 item">
+        <form class=" d-flex justify-content-end md-form form-sm mt-0">
+          <input class="form-control form-control-sm mr-2 w-50 search-box" type="text" placeholder=""
+            aria-label="Search">
+          <button>
+            <fa-icon [icon]="faSearch" class="mx-auto my-icon"></fa-icon>
+          </button>
+        </form>
+      </div> 
+      
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light menu padding">
+    
+    <button class="navbar-toggler my-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <fa-icon [icon]="faBars" class="my-icon"></fa-icon>
+    </button>
+    <button class="navbar-toggler my-btn">
+      <fa-icon [icon]="faSignInAlt" class="my-icon"></fa-icon>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto menu-list"> 
+            <li class="nav-item "> 
+                <a class="nav-link menu-item" href="#" routerLink="/home"> 
+                    Home 
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link menu-item" href="#" routerLink="/login"> 
+                    Login/Sign up
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link menu-item" href="#" routerLink="/products"> 
+                    Products
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link menu-item" href="#"> 
+                    About us 
+                </a> 
+            </li> 
+            <li class="nav-item"> 
+                <a class="nav-link menu-item" href="#"> 
+                    contact 
+                </a> 
+            </li> 
+        </ul> 
+    </div>
+  </nav>
+  
+</header>
