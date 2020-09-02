@@ -9,7 +9,7 @@ section {
     margin-top: 0px;
 }
 .margin{
-    margin: 20px;
+    margin: 20px 10px 10px 20px;
 }
 .title{
     color: #797b7b;
@@ -34,4 +34,13 @@ section {
 }
 .cat-link{
     text-decoration: none;
+}
+.my-carousel{
+    border: 0.5px solid #c5cad2;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+.my-icon{
+    color: #4DE9E5;
+    font-size: 25px;
 }

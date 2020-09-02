@@ -10,15 +10,17 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [						
+  declarations: [							
     AppComponent,
       HeaderComponent,
       ProductsComponent,
       HomeComponent,
       LoginComponent,
-      CategoriesComponent
+      CategoriesComponent,
+      FooterComponent
    ],
   imports: [
     BrowserModule,
