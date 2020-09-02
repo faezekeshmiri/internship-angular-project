@@ -3,6 +3,7 @@ footer{
 }
 .menu{
     padding: 0px;
+    padding-bottom: 20px;
 }
 
 .padding{
@@ -21,4 +22,11 @@ footer{
 }
 .menu-list{
     text-align: center;
+}
+.my-icon{
+    color: #4DE9E5;
+    font-size: 25px;
+}
+.social-media{
+    padding-top: 25px;
 }
