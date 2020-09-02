@@ -7,6 +7,7 @@
 section {
     background-color: #f4f4f4;
     margin-top: 0px;
+    border-bottom: 0.5px solid #c5cad2;
 }
 .margin{
     margin: 20px 10px 10px 20px;
