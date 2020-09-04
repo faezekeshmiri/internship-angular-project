@@ -34,3 +34,7 @@ footer{
 .social-media li a{
  padding: 12px;
 }
+.copy-right{
+    color: white;
+    background-color:  #4DE9E5;
+}
