@@ -1,8 +1,26 @@
 <section class="padding">
+  <h3 class="padding text-center title">:رویدادها</h3>
     <div class="container-fluid events">
         <div class="row">
-          <div class="col-4 test">
-            1 of 2
+          <div class="col-4 festivals">
+            <div id="carouselExample" class="carousel slide my-car " data-ride="carousel">
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="carousel-control-prev" href="#carouselExample" data-slide="prev"><fa-icon [icon]="leftArr" class="mx-auto my-icon"></fa-icon></a>
+                    <a class="carousel-control-next" href="#carouselExample" data-slide="next"><fa-icon [icon]="rightArr" class="mx-auto my-icon"></fa-icon></a>
+                </div>
+                <!--/.Controls-->
+                <div class="carousel-inner">
+                  <div *ngFor="let fest of festivals ; let i = index" class="carousel-item" [class.active]="i === 0">
+                    <img class="d-block w-100 event-img" src={{fest.image}} alt="First slide">
+                    <div class="carousel-caption d-none d-md-block my-caption">
+                        <h5>{{fest.title}}</h5>
+                        <p>{{fest.caption}}</p>
+                      </div>
+                  </div>
+                </div>
+                
+            </div>
           </div>
           <div class="col-8">
             <div id="carouselExampleIndicators" class="carousel slide my-car" data-ride="carousel">

@@ -16,7 +16,7 @@
       <div *ngFor="let in of counter(pages) ; let i = index;"  class="carousel-item" [class.active]="i === 0">
         
         <div class="d-flex flex-wrap justify-content-between ">
-          <div *ngFor="let cat of categories | slice:(i*pageLen):(i+1)*pageLen; let j = index;" class="margin text-center category">
+          <div *ngFor="let cat of items | slice:(i*pageLen):(i+1)*pageLen; let j = index;" class="margin text-center category">
             
             <a class="cat-link" href="#">
               <img src={{cat.image}} class="rounded cat-img">

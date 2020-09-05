@@ -1,6 +1,6 @@
 import { CategoryService } from './../category.service';
 import { Category } from './../category';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { faArrowCircleLeft , faArrowCircleRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -11,19 +11,16 @@ import { faArrowCircleLeft , faArrowCircleRight} from '@fortawesome/free-solid-s
 export class CategoriesComponent implements OnInit {
   leftArr = faArrowCircleLeft;
   rightArr = faArrowCircleRight;
-  categories: Category[];
-  title = 'دسته بندی ها';
+  @Input() items;
+  @Input() title: string; // decorate the property with @Input()
   pages: number ;
   pageLen = 4;
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
-    this.getCategories();
-    this.pages = this.pagination(this.categories.length , this.pageLen) ;
+    this.pages = this.pagination(this.items.length , this.pageLen) ;
   }
-  getCategories(): void{
-    this.categoryService.getCategories().subscribe(categories => this.categories = categories);
-  }
+  
   counter(i: number) {
     return new Array(i);
   }
