@@ -1,0 +1,35 @@
+.event-img{
+    height: 350px;
+    border-radius: 8px;
+}
+.my-car{
+    box-shadow: 0px 2px 2px  #4DE9E5 ;
+    border-radius: 8px;
+}
+.test{
+    background-color: brown;
+}
+.my-caption{
+    color: #797b7b;
+    background-color: rgba(244, 244, 244, 0.7);
+    border-radius: 5px;
+}
+.camp-img{
+    width: 270px;
+    height: 170px;
+    box-shadow: 0px 2px 2px  #4DE9E5 ;
+}
+.events{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.campaigns{
+    padding-top: 15px;
+    padding-left: 0px;
+}
+.caption{
+    color: #797b7b;
+}
+.link{
+    text-decoration: none;
+}

@@ -1,0 +1,44 @@
+<section class="padding">
+    <div class="container-fluid events">
+        <div class="row">
+          <div class="col-4 test">
+            1 of 2
+          </div>
+          <div class="col-8">
+            <div id="carouselExampleIndicators" class="carousel slide my-car" data-ride="carousel">
+                <!--Controls-->
+                <div class="controls-top">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev"><fa-icon [icon]="leftArr" class="mx-auto my-icon"></fa-icon></a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next"><fa-icon [icon]="rightArr" class="mx-auto my-icon"></fa-icon></a>
+                </div>
+                <!--/.Controls-->
+                <div class="carousel-inner">
+                  <div *ngFor="let event of events ; let i = index" class="carousel-item" [class.active]="i === 0">
+                    <img class="d-block w-100 event-img" src={{event.image}} alt="First slide">
+                    <div class="carousel-caption d-none d-md-block my-caption">
+                        <h5>{{event.title}}</h5>
+                        <p>{{event.caption}}</p>
+                      </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col campaigns">
+            <div class="d-flex flex-wrap justify-content-between ">
+                <div *ngFor="let camp of campaigns " class="margin text-center campaign">
+                    <a class="link" href="#">
+                        <img src={{camp.image}} class="rounded camp-img">
+                        <h6 class="title">{{camp.title}}</h6>
+                        <p class="caption">{{camp.caption}}</p>
+                      </a>
+                </div>
+            </div>
+                  
+          </div>
+          
+        </div>
+      </div>
+</section>

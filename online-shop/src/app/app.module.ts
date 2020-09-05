@@ -11,16 +11,18 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
-  declarations: [							
+  declarations: [								
     AppComponent,
       HeaderComponent,
       ProductsComponent,
       HomeComponent,
       LoginComponent,
       CategoriesComponent,
-      FooterComponent
+      FooterComponent,
+      EventsComponent
    ],
   imports: [
     BrowserModule,
