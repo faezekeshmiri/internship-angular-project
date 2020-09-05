@@ -7,12 +7,7 @@ footer{
     padding-bottom: 20px;
 }
 
-.padding{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+
 
 .menu-item{
     padding-bottom: 5px;
@@ -24,10 +19,7 @@ footer{
 .menu-list{
     text-align: center;
 }
-.my-icon{
-    color: #4DE9E5;
-    font-size: 25px;
-}
+
 .social-media{
     padding-top: 25px;
 }
