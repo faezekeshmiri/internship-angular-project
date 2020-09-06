@@ -12,7 +12,7 @@ import { Product } from '../product';
 export class HomeComponent implements OnInit {
   title1 = 'دسته بندی ها';
   categorie: Category[];
-  title2 = 'جدیدترین ها';
+  title2 = 'تازه ها';
   newProducts: Product[];
   carId1 = 'car1';
   carId2 = 'car2';

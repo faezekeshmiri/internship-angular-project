@@ -1,3 +1,5 @@
-<p>
-  products works!
-</p>
+<section class="">
+  <div  *ngFor="let cat of categorie">
+    <app-categories [title] = "cat.name" [items] = "setCatProducts(cat.id)"></app-categories>
+  </div>
+</section>

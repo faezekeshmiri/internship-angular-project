@@ -12,9 +12,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
 import { EventsComponent } from './events/events.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [									
     AppComponent,
       HeaderComponent,
       ProductsComponent,
@@ -22,7 +23,8 @@ import { EventsComponent } from './events/events.component';
       LoginComponent,
       CategoriesComponent,
       FooterComponent,
-      EventsComponent
+      EventsComponent,
+      RegisterComponent
    ],
   imports: [
     BrowserModule,

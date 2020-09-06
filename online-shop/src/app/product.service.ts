@@ -15,4 +15,7 @@ export class ProductService {
   getNewProducts():Observable<Product[]>{
     return of(PRODUCTS.slice(0, 7));
   }
+  getCatProducts(catId: number):Observable<Product[]>{
+    return of(PRODUCTS.filter(product => product.categoryId === catId));
+  }
 }
