@@ -1,3 +1,47 @@
-<p>
-  register works!
-</p>
+<section class="padding">
+  <div class="container-fluid">
+    <div class="row justify-content-between">
+      <div class="col-md-5">
+        <div class="form-group text-right">
+          <label for="password" class="my-lable"> نام خانوادگی </label>
+          <input #lastname type="text" class="form-control text-right my-input" id="password" placeholder="نام خانوادگی خود را وارد کنید">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group text-right">
+          <label for="phone" class="my-lable" > نام</label>
+          <input #firstname type="text" class="form-control text-right my-input" id="phone" placeholder="نام خود را وارد کنید">  
+        </div>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-md-5">
+        <div class="form-group text-right">
+          <label for="password" class="my-lable"> رمز عبور</label>
+          <input #password type="text" class="form-control text-right my-input" id="password" placeholder="رمز خود را وارد کنید">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group text-right">
+          <label for="phone" class="my-lable" > شماره موبایل</label>
+          <input #phone type="text" class="form-control text-right my-input" id="phone" placeholder="شماره موبایل خود را وارد کنید">  
+        </div>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-5">
+        <button class="my-active-btn" (click)="addUser(firstname.value , lastname.value , phone.value , password.value)">ثبت نام</button>
+      </div>
+      <div class="col-5 ">
+        <p class="my-p">.حساب کاربری دارید؟ وارد شوید</p>
+        <a routerLink="/login"><button class="my-btn login" >ورود </button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<div *ngIf="users.length>0">
+  <div *ngFor="let u of users" style="background-color: blue;">
+    {{u.id}}
+    {{u.firstName}}
+  </div>
+</div>

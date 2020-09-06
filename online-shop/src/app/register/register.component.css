@@ -1,0 +1,24 @@
+section{
+    background-color: #F4F4F4;
+}
+.login{
+    float: right;
+}
+.my-p{
+    float: right;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 350;
+    color: #797b7b;
+    display: none;
+}
+@media (min-width: 910px) { 
+    .my-p{
+        display: block;
+    }
+}
+@media (min-width: 768px) { 
+    .login{
+        float: left;
+    }
+}
