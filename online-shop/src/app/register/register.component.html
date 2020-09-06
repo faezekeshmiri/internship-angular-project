@@ -38,10 +38,5 @@
       </div>
     </div>
   </div>
+  <p *ngIf = "errorMessage" class="error">{{errorMessage}}</p>
 </section>
-<div *ngIf="users.length>0">
-  <div *ngFor="let u of users" style="background-color: blue;">
-    {{u.id}}
-    {{u.firstName}}
-  </div>
-</div>
