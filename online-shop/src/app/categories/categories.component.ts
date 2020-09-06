@@ -11,6 +11,7 @@ import { faArrowCircleLeft , faArrowCircleRight} from '@fortawesome/free-solid-s
 export class CategoriesComponent implements OnInit {
   leftArr = faArrowCircleLeft;
   rightArr = faArrowCircleRight;
+  @Input() carID: string;
   @Input() items;
   @Input() title: string; // decorate the property with @Input()
   pages: number ;

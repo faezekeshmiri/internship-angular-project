@@ -1,11 +1,11 @@
 <section class="padding">
   <h3 class="padding text-center title">:{{title}}</h3>
-  <div id="multi-item-example" class="carousel slide carousel-multi-item padding my-carousel" data-ride="carousel">
+  <div id={{carID}} class="carousel slide carousel-multi-item padding my-carousel" data-ride="carousel">
 
     <!--Controls-->
     <div class="controls-top">
-      <a class="carousel-control-prev" href="#multi-item-example" data-slide="prev"><fa-icon [icon]="leftArr" class="mx-auto my-icon"></fa-icon></a>
-      <a class="carousel-control-next" href="#multi-item-example" data-slide="next"><fa-icon [icon]="rightArr" class="mx-auto my-icon"></fa-icon></a>
+      <a class="carousel-control-prev" href=#{{carID}} data-slide="prev"><fa-icon [icon]="leftArr" class="mx-auto my-icon"></fa-icon></a>
+      <a class="carousel-control-next" href=#{{carID}} data-slide="next"><fa-icon [icon]="rightArr" class="mx-auto my-icon"></fa-icon></a>
     </div>
     <!--/.Controls-->
 

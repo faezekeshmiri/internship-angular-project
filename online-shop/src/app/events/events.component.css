@@ -29,7 +29,7 @@ section{
     padding-left: 0px;
 }
 .campaign{
-    max-width: 272px;
+    width: min-content;
 }
 .caption{
     color: #797b7b;
