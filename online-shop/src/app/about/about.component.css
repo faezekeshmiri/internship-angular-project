@@ -4,41 +4,19 @@ section{
 .part{
     color: #797b7b;
     line-height: 2.2;
-    font-size: 11px;
+    font-size: 15px;
 }
 h3{
     margin-bottom: 25px;
 }
 h5{
-    margin-top: 65px;
+    margin-top: 55px;
 }
-.right{
-   max-height: 400px;
-   min-height: 200px;
+.branch-img{
+   max-height: 290px;
+   position: relative;
+   left: -60px;
 }
-.test{
-    background-color: #797b7b;
+.branch{
     padding-left: 0px;
 }
-@media (min-width: 576px) { 
-    .part{
-        font-size: 13px;
-    }
- }
-
-@media (min-width: 768px) { 
-    .part{
-        font-size: 13px;
-    }
- }
-
-@media (min-width: 992px) { 
-   
- }
-
-@media (min-width: 1200px) { 
-    .part{
-        font-size: 18px;
-        line-height: 2.7;
-    }
- }
