@@ -14,9 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [										
+  declarations: [											
     AppComponent,
       HeaderComponent,
       ProductsComponent,
@@ -26,7 +27,8 @@ import { AboutComponent } from './about/about.component';
       FooterComponent,
       EventsComponent,
       RegisterComponent,
-      AboutComponent
+      AboutComponent,
+      ContactComponent
    ],
   imports: [
     BrowserModule,
