@@ -12,12 +12,22 @@ p{
     width: max-content;
     float: right;
     margin-right: 15px;
-    max-width: 200px;
+    max-width: 190px;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    margin-left: 15px;
+    margin-bottom: 0px;
 }
 .contact-icon{
     float: right;
     font-size: 20px;
     margin-top: 5px;
+}
+.msg-input{
+    height: 60px;
 }
 .info{
     border-bottom: 0.5px solid #35cad2 ;
