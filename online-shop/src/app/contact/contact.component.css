@@ -12,9 +12,20 @@ p{
     width: max-content;
     float: right;
     margin-right: 15px;
+    max-width: 200px;
 }
 .contact-icon{
     float: right;
     font-size: 20px;
     margin-top: 5px;
+}
+.info{
+    border-bottom: 0.5px solid #35cad2 ;
+    
+}
+@media (min-width: 992px){
+    .info{
+        border-right: 0.5px solid #35cad2 ;
+        border-bottom: 0px;
+    }  
 }
