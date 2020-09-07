@@ -13,9 +13,10 @@ import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
 import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [									
+  declarations: [										
     AppComponent,
       HeaderComponent,
       ProductsComponent,
@@ -24,7 +25,8 @@ import { RegisterComponent } from './register/register.component';
       CategoriesComponent,
       FooterComponent,
       EventsComponent,
-      RegisterComponent
+      RegisterComponent,
+      AboutComponent
    ],
   imports: [
     BrowserModule,

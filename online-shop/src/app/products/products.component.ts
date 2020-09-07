@@ -12,6 +12,7 @@ import { Product } from '../product';
 })
 export class ProductsComponent implements OnInit {
   categorie: Category[];
+  temp: Product[];
   constructor(private categoryService: CategoryService, private productService: ProductService ) { }
 
   ngOnInit() {
@@ -20,7 +21,14 @@ export class ProductsComponent implements OnInit {
   setCategories(): void{
     this.categoryService.getCategories().subscribe(categories => this.categorie = categories);
   }
-  setCatProducts(categoryId: number): Observable<Product[]>{
+  getCatProducts(categoryId: number): Observable<Product[]>{
     return this.productService.getCatProducts(categoryId);
+  }
+  notEmpty(input: Observable<Product[]>): boolean{
+    input.subscribe(products => this.temp = products);
+    if (this.temp.length > 0){
+      return true;
+    }
+    return false;
   }
 }

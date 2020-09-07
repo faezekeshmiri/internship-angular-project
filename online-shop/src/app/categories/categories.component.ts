@@ -12,13 +12,15 @@ export class CategoriesComponent implements OnInit {
   leftArr = faArrowCircleLeft;
   rightArr = faArrowCircleRight;
   @Input() carID: string;
-  @Input() items;
+  items;
+  @Input() temp;
   @Input() title: string; // decorate the property with @Input()
   pages: number ;
   pageLen = 4;
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit() {
+    this.subscribe();
     this.pages = this.pagination(this.items.length , this.pageLen) ;
   }
   
@@ -30,5 +32,8 @@ export class CategoriesComponent implements OnInit {
       return Math.floor(items / pageLen) + 1;
     }
     return items / pageLen;
+  }
+  subscribe(): void{
+    this.temp.subscribe(items => this.items = items);
   }
 }

@@ -1,5 +1,8 @@
-<section class="">
+<section>
   <div  *ngFor="let cat of categorie">
-    <app-categories [title] = "cat.name" [items] = "setCatProducts(cat.id)"></app-categories>
+    <div *ngIf="notEmpty(getCatProducts(cat.id))">
+      <app-categories [title] = "cat.name" [temp] = "getCatProducts(cat.id)" [carID] = "cat.name"></app-categories>
+      <button class="my-active-btn more">بیشتر</button>
+    </div>
   </div>
 </section>
