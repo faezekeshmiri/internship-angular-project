@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailComponent implements OnInit {
   product: Product;
-
+  informations = [['رنگ' , 'سفید'] , ['اندازه' , 'بزرگ'] , ['جنس' , 'چرم']];
   constructor(private route: ActivatedRoute,
               private productService: ProductService) { }
 

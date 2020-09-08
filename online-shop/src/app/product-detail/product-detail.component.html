@@ -12,10 +12,17 @@
         <div class="col btn-align">
           <button class="my-active-btn product-btn">افزودن به سبد خرید</button>
         </div>
-
       </div>
     </div>
     
+    </div>
+  </div>
+  <h3 class="text-right title my-info-title">مشخصات </h3>
+  <div class="container-fluid info-container">
+    <div class="row flex-row-reverse text-right" *ngFor="let info of informations">
+      <div class="col table-part" *ngFor="let str of info; let i = index;" [class.info-title]="i === 0" [class.col-2]="i === 0">
+        {{str}}
+      </div>
     </div>
   </div>
 </section>
