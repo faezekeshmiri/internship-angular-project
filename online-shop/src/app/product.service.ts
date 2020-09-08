@@ -18,4 +18,7 @@ export class ProductService {
   getCatProducts(catId: number):Observable<Product[]>{
     return of(PRODUCTS.filter(product => product.categoryId === catId));
   }
+  getProduct(id: number): Observable<Product> {
+    return of(PRODUCTS.find(product => product.id === id));
+  }
 }
