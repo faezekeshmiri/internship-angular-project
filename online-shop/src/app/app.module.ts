@@ -16,7 +16,6 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CategoryProductsComponent } from './category-products/category-products.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
@@ -33,7 +32,6 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
       AboutComponent,
       ContactComponent,
       CategoryProductsComponent,
-      ProductDetailsComponent,
       ProductDetailComponent
    ],
   imports: [

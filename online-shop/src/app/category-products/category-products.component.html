@@ -1,15 +1,16 @@
 <section class="padding text-right">
   <h3 class="title">{{category.name}}</h3>
   <div class="d-flex flex-wrap justify-content-between">
-    <a *ngFor="let product of products" href="#">
-      <div class="p-2 product-cart text-center">
-        <img src={{product.image}} class="rounded">
-        <h6 class="title">
-          {{product.name}}
-        </h6>
-        <p>{{product.price}} T</p>
+    
+      <div *ngFor="let product of products" class="p-2 product-cart text-center">
+        <a routerLink="/product/{{product.id}}">
+            <img src={{product.image}} class="rounded">
+            <h6 class="title">
+              {{product.name}}
+            </h6>
+            <p>{{product.price}} T</p>
+        </a>
       </div>
-    </a>
 
   </div>
 </section>

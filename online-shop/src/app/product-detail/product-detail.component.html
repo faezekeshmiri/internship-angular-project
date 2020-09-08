@@ -1,3 +1,21 @@
-<p>
-  product-detail works!
-</p>
+<section class="padding">
+  <div class="container-fluid">
+    <div class="row padding product-box">
+      <div class="col-sm-4 text-left">
+        <img src={{product.image}} alt="product image" class="product-img">
+      </div>
+    <div class="col-sm-8 info-align padding">
+      <h3 class="product-info">{{product.name}}</h3>
+      <h5 class="product-info price">{{product.price}} T</h5>
+      <p class="product-info">{{product.description}}</p>
+      <div class="row">
+        <div class="col btn-align">
+          <button class="my-active-btn product-btn">افزودن به سبد خرید</button>
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
