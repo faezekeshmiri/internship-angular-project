@@ -2,7 +2,9 @@
   <div  *ngFor="let cat of categorie">
     <div *ngIf="notEmpty(getCatProducts(cat.id))">
       <app-categories [title] = "cat.name" [temp] = "getCatProducts(cat.id)" [carID] = "cat.name"></app-categories>
-      <button class="my-active-btn more">بیشتر</button>
+      <a routerLink="/category/{{cat.id}}">
+        <button class="my-active-btn more">بیشتر</button>
+      </a>
     </div>
   </div>
 </section>

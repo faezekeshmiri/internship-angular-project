@@ -15,9 +15,10 @@ import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { CategoryProductsComponent } from './category-products/category-products.component';
 
 @NgModule({
-  declarations: [											
+  declarations: [												
     AppComponent,
       HeaderComponent,
       ProductsComponent,
@@ -28,7 +29,8 @@ import { ContactComponent } from './contact/contact.component';
       EventsComponent,
       RegisterComponent,
       AboutComponent,
-      ContactComponent
+      ContactComponent,
+      CategoryProductsComponent
    ],
   imports: [
     BrowserModule,

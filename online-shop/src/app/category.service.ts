@@ -12,4 +12,7 @@ export class CategoryService {
   getCategories():Observable<Category[]>{
     return of(CATEGORIES);
   }
+  getCategory(id: number): Observable<Category> {
+    return of(CATEGORIES.find(cateory => cateory.id === id));
+  }
 }
