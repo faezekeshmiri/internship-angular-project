@@ -1,3 +1,4 @@
+import { OrderComponent } from './order/order.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CategoryProductsComponent } from './category-products/category-products.component';
@@ -12,7 +13,6 @@ import { ProductsComponent } from './products/products.component';
 
 
 
-
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'products', component: ProductsComponent },
@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'shoppingCart', component: ShoppingCartComponent },
+  { path: 'order', component: OrderComponent },
   { path: 'home', component: HomeComponent }
 ];
 

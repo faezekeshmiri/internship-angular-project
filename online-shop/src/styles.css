@@ -54,3 +54,14 @@
     color: #c50031;
     font-size: 15px;
 }
+.price{
+    color:#35cad2 ;
+    padding-top:15px;
+}
+.row-border{
+    border-bottom: 1.3px solid #4DE9E5;
+    border-top: 1.3px solid #4DE9E5;
+}
+.row-padding{
+    padding: 10px 0px;
+}
