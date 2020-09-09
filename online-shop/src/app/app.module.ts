@@ -18,9 +18,10 @@ import { ContactComponent } from './contact/contact.component';
 import { CategoryProductsComponent } from './category-products/category-products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
-  declarations: [															
+  declarations: [																
     AppComponent,
       HeaderComponent,
       ProductsComponent,
@@ -34,7 +35,8 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
       ContactComponent,
       CategoryProductsComponent,
       ProductDetailComponent,
-      ShoppingCartComponent
+      ShoppingCartComponent,
+      OrderComponent
    ],
   imports: [
     BrowserModule,
