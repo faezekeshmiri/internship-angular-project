@@ -2,6 +2,7 @@ import { ProductService } from './../product.service';
 import { Product } from './../product';
 import { User } from './../user';
 import { Component, OnInit } from '@angular/core';
+import { faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class ShoppingCartComponent implements OnInit {
   products: Product[];
   sum: number;
   shippingCost = 8000;
+  delete = faTimesCircle;
 
   constructor( private productService: ProductService) { }
 
@@ -32,6 +34,9 @@ export class ShoppingCartComponent implements OnInit {
       sum += products[i].price;
     }
     return sum;
+  }
+  onDelete( product: Product): void{
+    this.products = this.products.filter(item => item !== product);
   }
 
 }
