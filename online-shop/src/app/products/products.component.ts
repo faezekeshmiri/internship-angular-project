@@ -13,6 +13,7 @@ import { Product } from '../product';
 export class ProductsComponent implements OnInit {
   categorie: Category[];
   temp: Product[];
+  type = 'product';
   constructor(private categoryService: CategoryService, private productService: ProductService ) { }
 
   ngOnInit() {

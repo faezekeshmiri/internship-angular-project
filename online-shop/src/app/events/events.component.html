@@ -43,20 +43,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col campaigns">
-            <div class="d-flex flex-wrap justify-content-between ">
-                <div *ngFor="let camp of campaigns " class="margin text-center campaign">
-                    <a class="link" href="#">
-                        <img src={{camp.image}} class="rounded camp-img">
-                        <h6 class="title">{{camp.title}}</h6>
-                        <p class="caption">{{camp.caption}}</p>
-                      </a>
-                </div>
-            </div>
-                  
+        
+        <div class="row d-flex flex-wrap justify-content-center campaigns">
+          <div class="col mr-2 text-center campaign" *ngFor="let camp of campaigns; let i = index;">
+            <a class="link" href="#">
+              <img src={{camp.image}} class="rounded camp-img">
+              <h6 class="title">{{camp.title}}</h6>
+              <p class="caption">{{camp.caption}}</p>
+            </a>
           </div>
-          
         </div>
       </div>
 </section>

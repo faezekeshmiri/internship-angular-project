@@ -14,6 +14,7 @@ export class CategoriesComponent implements OnInit {
   @Input() carID: string;
   items;
   @Input() temp;
+  @Input() type;
   @Input() title: string; // decorate the property with @Input()
   pages: number ;
   pageLen = 4;

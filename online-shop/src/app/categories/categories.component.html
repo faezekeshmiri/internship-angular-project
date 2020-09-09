@@ -18,7 +18,7 @@
         <div class="d-flex flex-wrap justify-content-between ">
           <div *ngFor="let cat of items | slice:(i*pageLen):(i+1)*pageLen; let j = index;" class="margin text-center category">
             
-            <a class="cat-link" href="#">
+            <a class="cat-link" routerLink="/{{type}}/{{cat.id}}">
               <img src={{cat.image}} class="rounded cat-img">
               <h6 class="cat-title">{{cat.name}}</h6>
             </a>

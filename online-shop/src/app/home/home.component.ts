@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   title2 = 'تازه ها';
   carId1 = 'car1';
   carId2 = 'car2';
+  type1 = 'category';
+  type2 = 'product';
   constructor(private categoryService: CategoryService , private productService: ProductService) { }
 
   ngOnInit() {
