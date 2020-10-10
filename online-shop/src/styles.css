@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.my-icon{
+    color: #4DE9E5;
+    font-size: 25px;
+}

@@ -1,0 +1,32 @@
+footer{
+    background-color: #F4F4F4;
+}
+.menu{
+    margin-top: 20px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+
+
+.menu-item{
+    padding-bottom: 5px;
+    font-size: 15.5px;
+}
+.menu-item:hover{
+    border-bottom: 1px solid #4DE9E5;
+}
+.menu-list{
+    text-align: center;
+}
+
+.social-media{
+    padding-top: 25px;
+}
+.social-media li a{
+ padding: 12px;
+}
+.copy-right{
+    color: white;
+    background-color:  #4DE9E5;
+}

@@ -1,12 +1,8 @@
-.padding{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+
 section {
     background-color: #f4f4f4;
     margin-top: 0px;
+    border-bottom: 0.5px solid #c5cad2;
 }
 .margin{
     margin: 20px 10px 10px 20px;
@@ -39,8 +35,4 @@ section {
     border: 0.5px solid #c5cad2;
     border-radius: 8px;
     margin-bottom: 50px;
-}
-.my-icon{
-    color: #4DE9E5;
-    font-size: 25px;
 }

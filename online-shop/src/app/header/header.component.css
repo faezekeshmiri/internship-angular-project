@@ -7,21 +7,15 @@ header{
     margin-left: 0px;
     margin-right: 0px;
 }
-.menu{
-    padding: 0px;
-}
 .head{
   margin-right: 0px;
   padding: 0px;
   width: 100%;
 }
-
-.padding{
-    padding-top: 30px;
+.menu{
     padding-bottom: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
 }
+
 .item{
     padding-top: 15px;
 }
@@ -40,10 +34,6 @@ header{
 }
 .search-box:hover{
     border-bottom: 1.3px solid #4DE9E5;
-}
-.my-icon{
-    color: #4DE9E5;
-    font-size: 25px;
 }
 .menu-item{
     padding-bottom: 5px;
