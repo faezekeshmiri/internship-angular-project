@@ -1,0 +1,37 @@
+<section class="padding">
+  <h3 class="padding text-center title">:{{title}}</h3>
+  <div id="multi-item-example" class="carousel slide carousel-multi-item padding my-carousel" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="carousel-control-prev" href="#multi-item-example" data-slide="prev"><fa-icon [icon]="leftArr" class="mx-auto my-icon"></fa-icon></a>
+      <a class="carousel-control-next" href="#multi-item-example" data-slide="next"><fa-icon [icon]="rightArr" class="mx-auto my-icon"></fa-icon></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div *ngFor="let in of counter(pages) ; let i = index;"  class="carousel-item" [class.active]="i === 0">
+        
+        <div class="d-flex flex-wrap justify-content-between ">
+          <div *ngFor="let cat of categories | slice:(i*pageLen):(i+1)*pageLen; let j = index;" class="margin text-center category">
+            
+            <a class="cat-link" href="#">
+              <img src={{cat.image}} class="rounded cat-img">
+              <h6 class="cat-title">{{cat.name}}</h6>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!--/.First slide-->
+
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+</section>
+
